@@ -1,0 +1,41 @@
+﻿@page
+@model OrtensLIA.Pages.Users.ListUsersModel
+@{
+}
+
+
+<h1 class="toast-header mb-3">Alla användare</h1>
+@if(Model._Users != null && Model._Users.Any())
+{
+	<table class="table">
+		<thead class="table-dark">
+			<tr>
+				<th>Id</th>
+				<th>Namn</th>
+				<th>Email</th>
+				<th>Stad</th>
+				<th>Ös</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach(var user in Model._Users)
+			{
+				<tr>
+					<td>@user.id</td>
+					<td>@user.Name</td>
+					<td>@user.Email</td>
+					<td>@user.Location</td>
+					<td>
+						<a class="btn btn-dark">Ändra</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+	<div>
+		<button class="btn btn-secondary">Lägg till användare</button>
+	</div>
+} else 
+{
+	<p>Inga användare hittades.</p>
+}

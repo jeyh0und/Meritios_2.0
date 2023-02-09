@@ -1,0 +1,36 @@
+﻿@page
+@model OrtensLIA.Pages.Users.AddUserModel
+@{
+}
+
+<form method="post">
+	<hi>Skapa en användare</hi>
+
+	<div class="mb-3">
+		<label class="form-label">Namn</label>
+		<input type="text" class="form-control" asp-for="addUserRequest.Name"/>
+	</div>
+	<div class="mb-3">
+		<label class="form-label">Email</label>
+		<input type="email" class="form-control" asp-for="addUserRequest.Email"/>
+	</div>
+	<div class="mb-3">
+		<label class="form-label">Telefon</label>
+		<input type="text" class="form-control" asp-for="addUserRequest.PhoneNr"/>
+	</div>
+	<div class="mb-3">
+		<label class="form-labes">Skola</label>
+		<input type="text" class="form-control" asp-for="addUserRequest.School"/>
+	</div>
+	<div class="mb-3">
+		<label class="form-label">Utbildning</label>
+		<input type="text" class="form-control" asp-for="addUserRequest.Education"/>
+	</div>
+	<div class="mb-3">
+		<label class="form-label">Stad</label>
+		<input type="text" class="form-control" asp-for="addUserRequest.Location"/>
+	</div>
+	<div>
+		<button type="submit" class="btn btn-success">Lägg till</button>
+	</div>
+</form>
