@@ -21,19 +21,19 @@
 			@foreach(var user in Model._Users)
 			{
 				<tr>
-					<td>@user.id</td>
+					<td>@user.Id</td>
 					<td>@user.Name</td>
 					<td>@user.Email</td>
 					<td>@user.Location</td>
 					<td>
-						<a class="btn btn-dark">Ändra</a>
+						<a href="/users/EditUser/@user.Id" class="btn btn-dark">Ändra</a>
 					</td>
 				</tr>
 			}
 		</tbody>
 	</table>
 	<div>
-		<button class="btn btn-secondary">Lägg till användare</button>
+		<a href="/users/AddUser" class="btn btn-secondary">Lägg till användare</a>
 	</div>
 } else 
 {

@@ -1,6 +1,6 @@
-﻿namespace OrtensLIA.Models.Domain
+﻿namespace OrtensLIA.Models.ViewModel
 {
-	public class User
+	public class EditUserViewModel
 	{
 		public Guid Id { get; set; }
 		public string Name { get; set; }

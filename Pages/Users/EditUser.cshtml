@@ -1,0 +1,49 @@
+﻿@page "{id:Guid}"
+@model OrtensLIA.Pages.Users.EditUserModel
+@{
+}
+
+<form method="post">
+	<h1>Editera användare</h1>
+
+	<div>
+		<label class="form-label">Id</label>
+		<input type="text" class="form-control" asp-for="_editUser.Id" readonly />
+	</div>
+
+	<div>
+		<label class="form-label">Namn</label>
+		<input type="text" class="form-control" asp-for="_editUser.Name" />
+	</div>
+
+	<div>
+		<label class="form-label">Email</label>
+		<input type="email" class="form-control" asp-for="_editUser.Email" />
+	</div>
+
+	<div>
+		<label class="form-label">Skola</label>
+		<input type="text" class="form-control" asp-for="_editUser.School" />
+	</div>
+
+	<div>
+		<label class="form-label">Utbildning</label>
+		<input type="text" class="form-control" asp-for="_editUser.Education" />
+	</div>
+
+	<div>
+		<label class="form-label">Stad</label>
+		<input type="text" class="form-control" asp-for="_editUser.Location" />
+	</div>
+
+	<div>
+		<label class="form-label">Telefon</label>
+		<input type="text" class="form-control" asp-for="_editUser.PhoneNr" />
+	</div>
+
+	<div class="mb-3 d-flex justify-content-between">
+		<button type="submit" class="btn btn-success" asp-page-handler="Update">Uppdatera</button>
+		<button type="submit" class="btn btn-danger" asp-page-handler="Delete">Ta bort</button>
+	</div>
+
+</form>

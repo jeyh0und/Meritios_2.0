@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\jeyhu\source\repos\OrtensLIA\OrtensLIA
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/jeyhu/source/repos/OrtensLIA/OrtensLIA/Pages/Feed/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVlZFxEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jeyhu/source/repos/OrtensLIA/OrtensLIA/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/jeyhu/source/repos/OrtensLIA/OrtensLIA/Pages/Users/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRkVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jeyhu/source/repos/OrtensLIA/OrtensLIA/Pages/Users/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jeyhu/source/repos/OrtensLIA/OrtensLIA/Pages/Users/ListUsers.cshtml]

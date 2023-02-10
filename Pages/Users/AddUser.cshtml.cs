@@ -20,7 +20,7 @@ namespace OrtensLIA.Pages.Users
 		{
 		}
 
-		public void OnPost()
+		public IActionResult OnPost()
 		{
 			var userDomainModel = new User
 			{
@@ -34,6 +34,8 @@ namespace OrtensLIA.Pages.Users
 
 			dBContext._Users.Add(userDomainModel);
 			dBContext.SaveChanges();
+
+			return RedirectToPage("/Users/ListUsers");
 		}
 	}
 }
